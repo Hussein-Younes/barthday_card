@@ -1,0 +1,35 @@
+/* STREAMING_CHUNK:Importing Google Fonts... */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 50%, #db2777 100%);
+overflow: hidden;
+}
+.glass-card {
+background: rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.4);
+}
+@keyframes float {
+0%, 100% {
+transform: translateY(0px) rotate(0deg);
+}
+50% {
+transform: translateY(-15px) rotate(5deg);
+}
+}
+​.floating-element {
+animation: float 4s ease-in-out infinite;
+}
+@keyframes pulse-glow {
+0%, 100% {
+box-shadow: 0 0 15px rgba(244, 114, 182, 0.6);
+}
+50% {
+box-shadow: 0 0 35px rgba(255, 255, 255, 0.9);
+}
+}
+​.glow-btn {
+animation: pulse-glow 2s infinite;
+}
